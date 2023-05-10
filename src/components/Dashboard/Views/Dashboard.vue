@@ -3,147 +3,20 @@
     <div class="container-fluid">
       <div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <stats-card>
-              <i slot="icon" class="material-icons" style="color:#fff">content_copy</i>
-              <div slot="title">
-                <p class="category">Used Space</p>
-                <h3 class="title">49/50
-                  <small>GB</small>
-                </h3>
-              </div>
-              <div slot="footer">
-                <i class="material-icons">local_offer</i> tag开发中........
-              </div>
-            </stats-card>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <stats-card>
-              <i slot="icon" class="material-icons" style="color:#fff">store</i>
-              <div slot="title">
-                <p class="category">Revenue</p>
-                <h3 class="title">$34,245</h3>
-              </div>
-              <div slot="footer">
-                <i class="material-icons">local_offer</i> tag开发中........
-              </div>
-            </stats-card>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <stats-card color="red">
-              <i slot="icon" class="material-icons" style="color:#fff">info_outline</i>
-              <div slot="title">
-                <p class="category">Fixed Issues</p>
-                <h3 class="title">75</h3>
-              </div>
-              <div slot="footer">
-                <i class="material-icons">local_offer</i> tag开发中........
-              </div>
-            </stats-card>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-6">
-            <stats-card color="blue">
-              <i slot="icon" class="fa fa-twitter" style="color:#fff"></i>
-              <div slot="title">
-                <p class="category">Followers</p>
-                <h3 class="title">+245</h3>
-              </div>
-              <div slot="footer">
-                <i class="material-icons">local_offer</i> tag开发中........
-              </div>
-            </stats-card>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <chart-card id="dailySales" :chart-data="dailySalesChart.data" :chart-options="dailySalesChart.options">
-              <div slot="title">
-                <h4 class="title">Daily Sales</h4>
-                <p class="category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span>
-                  increase in today sales.</p>
-              </div>
-              <span slot="footer">
-                <i class="material-icons">access_time</i> updated 4 minutes ago
-              </span>
-            </chart-card>
-          </div>
-
-          <div class="col-md-4">
-            <chart-card color="orange" chart-type="Bar" id="emailSubscriptions" :chart-data="emailSubscriptionsChart.data"
-              :chart-options="emailSubscriptionsChart.options"
-              :responsive-options="emailSubscriptionsChart.responsiveOptions">
-              <div slot="title">
-                <h4 class="title">Email Subscriptions</h4>
-                <p class="category">Last Campaign Performance</p>
-              </div>
-              <span slot="footer">
-                <i class="material-icons">access_time</i> campaign sent 2 days ago
-              </span>
-            </chart-card>
-          </div>
-
-          <div class="col-md-4">
-            <chart-card color="red" id="completedTasks" :chart-data="completedTasksChart.data"
-              :chart-options="completedTasksChart.options">
-              <div slot="title">
-                <h4 class="title">Completed Tasks</h4>
-                <p class="category">Last Campaign Performance</p>
-              </div>
-              <span slot="footer">
-                <i class="material-icons">access_time</i> campaign sent 2 days ago
-              </span>
-            </chart-card>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-          </div>
-
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header" data-background-color="orange">
-                <h4 class="title">Employees Stats</h4>
-                <p class="category">New employees on 15th September, 2016</p>
-              </div>
-              <div class="card-content table-responsive">
-                <table class="table table-hover">
-                  <thead class="text-warning">
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Salary</th>
-                    <th>Country</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Dakota Rice</td>
-                      <td>$36,738</td>
-                      <td>Niger</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Minerva Hooper</td>
-                      <td>$23,789</td>
-                      <td>Curaçao</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Sage Rodriguez</td>
-                      <td>$56,142</td>
-                      <td>Netherlands</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Philip Chaney</td>
-                      <td>$38,735</td>
-                      <td>Korea, South</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div v-for="itme in mainInfo">
+            <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
+              <stats-card>
+                <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/56`" alt=""
+                  class="iconClass">
+                <div slot="title">
+                  <p class="category" style="color: #fff;">{{ itme.con }}</p>
+                  <h3 class="title">{{ itme.name }}
+                  </h3>
+                </div>
+                <div slot="footer">
+                  <i class="material-icons">local_offer</i> tag开发中........
+                </div>
+              </stats-card>
             </div>
           </div>
         </div>
@@ -155,6 +28,7 @@
 <script>
 import StatsCard from 'components/UIComponents/Cards/StatsCard.vue'
 import ChartCard from 'components/UIComponents/Cards/ChartCard.vue'
+import allInfo from 'components/Info/allInfo.json'
 export default {
   components: {
     StatsCard,
@@ -221,13 +95,33 @@ export default {
             }
           }]
         ]
-      }
+      },
+
+      linkData: [
+        {
+          name: "bilibili",
+          linke: "www.bilibili.com",
+          con: "bbbbbbbbbbbbbbbb"
+        },
+        {
+          name: "bilibili",
+          linke: "bilibili.com",
+          con: "bbbbbbbbbbbbbbbb"
+        }
+      ],
+      mainInfo: []
 
     }
   },
   mounted() {
+    this.mainInfo = allInfo['影视']
   },
   methods: {
+    jumpLike(linke) {
+      let path = window.location.protocol + '//' + linke
+      window.open(path)
+
+    },
     colorR() {
       var rObj = {
         "lio-wh": "#ffffff",
@@ -252,8 +146,13 @@ export default {
 }
 
 </script>
-<style>
-.ss {
-  background-color: #fff;
+<style lang="scss" scoped>
+.stats-card {
+
+  // background-color: #fff;
+  // .iconClass {
+  //   width: 61px;
+  //   height: 61px;
+  // }
 }
 </style>

@@ -24,37 +24,37 @@ const routes = [
     children: [
       {
         path: 'dashboard',
-        name: 'Material Dashboard',
+        name: '影视',
         component: Dashboard
       },
       {
         path: 'stats',
-        name: 'stats',
+        name: '游戏',
         component: UserProfile
       },
       {
         path: 'notifications',
-        name: 'notifications',
+        name: '工具箱',
         component: Notifications
       },
       {
         path: 'icons',
-        name: 'icons',
+        name: '认知拓展',
         component: Icons
       },
       {
         path: 'maps',
-        name: 'maps',
+        name: 'ACGN',
         component: Maps
       },
       {
         path: 'typography',
-        name: 'typography',
+        name: '玛利亚之墙',
         component: Typography
       },
       {
         path: 'table-list',
-        name: 'table-list',
+        name: '乳飞专区',
         component: TableList
       }
     ]

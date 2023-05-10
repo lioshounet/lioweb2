@@ -1,9 +1,9 @@
 <template>
   <div class="card card-stats">
-    <div class="card-header" :style="thisstyle">
-      <slot name="icon"></slot>
+    <div class="card-header ">
+      <slot name="icon" class="iconClass"></slot>
     </div>
-    <div class="card-content">
+    <div class="card-content" :style="thisstyle">
       <slot name="title"></slot>
     </div>
     <div class="card-footer">
@@ -31,24 +31,52 @@ export default {
   },
   created() {
 
-    var rArr = [
-      "#355070",
-      "#6d597a",
-      "#b56576",
-      "#e56b6f",
-      "#eaac8b",]
+    var rArrQ = [
+      "#fbf8cc",
+      "#fde4cf",
+      "#ffcfd2",
+      "#f1c0e8",
+      "#cfbaf0",
+      "#a3c4f3",
+      "#90dbf4",
+      "#8eecf5",
+      "#98f5e1",
+      "#b9fbc0",
+    ]
+
+    var rArrS = [
+      "#001219",
+      "#005f73",
+      "#0a9396",
+      "#94d2bd",
+      "#e9d8a6",
+      "#ee9b00",
+      "#ca6702",
+      "#bb3e03",
+      "#ae2012",
+      "#9b2226",
+    ]
 
 
     this.thisstyle = {
-      "background-color": rArr[Math.floor(Math.random() * rArr.length)]
+      "background-color": rArrS[Math.floor(Math.random() * rArrS.length)],
+      "color": '#fff'
     };
 
-    this.rcolor = rArr[Math.floor(Math.random() * rArr.length)];
-    console.log(this.rcolor);
   },
 }
 
 
 
 </script>
-<style></style>
+<style lang="scss" scoped>
+.card-header {
+  border-radius: 15% !important;
+
+  .iconClass {
+    width: 61px;
+    height: 61px;
+    border-radius: 15%;
+  }
+}
+</style>

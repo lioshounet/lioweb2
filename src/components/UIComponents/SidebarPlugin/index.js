@@ -4,51 +4,51 @@ const SidebarStore = {
   showSidebar: false,
   sidebarLinks: [
     {
-      name: 'Dashboard',
+      name: '影视',
       icon: 'dashboard',
       path: '/admin/dashboard'
     },
     {
-      name: 'User Profile',
+      name: '游戏',
       icon: 'person',
       path: '/admin/stats'
     },
     {
-      name: 'Table List',
+      name: '工具箱',
       icon: 'content_paste',
       path: '/admin/table-list'
     },
     {
-      name: 'Typography',
+      name: '认知拓展',
       icon: 'library_books',
       path: '/admin/typography'
     },
     {
-      name: 'Icons',
+      name: 'ACGN',
       icon: 'bubble_chart',
       path: '/admin/icons'
     },
     {
-      name: 'Maps',
+      name: '玛利亚之墙',
       icon: 'location_on',
       path: '/admin/maps'
     },
     {
-      name: 'Notifications',
+      name: '乳飞专区',
       icon: 'notifications',
       path: '/admin/notifications'
     }
   ],
-  displaySidebar (value) {
+  displaySidebar(value) {
     this.showSidebar = value
   }
 }
 
 const SidebarPlugin = {
 
-  install (Vue) {
+  install(Vue) {
     Vue.mixin({
-      data () {
+      data() {
         return {
           sidebarStore: SidebarStore
         }
@@ -56,7 +56,7 @@ const SidebarPlugin = {
     })
 
     Object.defineProperty(Vue.prototype, '$sidebar', {
-      get () {
+      get() {
         return this.$root.sidebarStore
       }
     })
