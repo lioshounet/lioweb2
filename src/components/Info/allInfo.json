@@ -136,6 +136,11 @@
             "name": "海盗湾",
             "linke": "piratebay.live/",
             "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "射手网",
+            "linke": "assrt.net/",
+            "con": "字幕下载"
         }
     ],
     "游戏": [
@@ -207,6 +212,11 @@
             "con": "经典动漫种子获取"
         },
         {
+            "name": "miobt",
+            "linke": "www.miobt.com/",
+            "con": "经典动漫种子获取"
+        },
+        {
             "name": "AGE",
             "linke": "age456.com/",
             "con": "盗版在线动漫"
@@ -231,6 +241,11 @@
         {
             "name": "琉璃神社",
             "linke": "www.hacg.mom",
+            "con": "经典里番记录器"
+        },
+        {
+            "name": "绅士仓库",
+            "linke": "cangku.moe/login",
             "con": "经典里番记录器"
         }
     ],
@@ -279,6 +294,11 @@
             "name": "pixabay",
             "linke": "pixabay.com/zh/",
             "con": "搞图的"
+        },
+        {
+            "name": "coolors",
+            "linke": "coolors.co/palettes",
+            "con": "外网的色卡"
         }
     ],
     "toolBox": [
@@ -368,6 +388,50 @@
             "name": "世界之窗",
             "linke": "www.window-swap.com/",
             "con": "世界的一边的随机窗户"
+        }
+    ],
+    "WallOver": [
+        {
+            "name": "proton邮箱",
+            "linke": "proton.me/mail",
+            "con": "彻底去国有化首选邮箱"
+        },
+        {
+            "name": "蜜糖租赁",
+            "linke": "metshop.vip/#/?sid=MTU21949",
+            "con": "社交账号出租"
+        },
+        {
+            "name": "clash稳定下载",
+            "linke": "asd548wer.lanzouo.com/i8xoUwcbqcd",
+            "con": "clash稳定下载"
+        },
+        {
+            "name": "clash-github下载",
+            "linke": "minhaskamal.github.io/DownGit/#/home",
+            "con": "clash源码"
+        }
+    ],
+    "WallChange": [
+        {
+            "name": "墨少飞行指导",
+            "linke": "msl.la",
+            "con": "懂的都懂"
+        },
+        {
+            "name": "圆梦域名发布",
+            "linke": "https://github.com/67kcp/67kcp/blob/master/README.md",
+            "con": "圆梦域名发布"
+        },
+        {
+            "name": "byway",
+            "linke": "bywa-1.art",
+            "con": "byway飞行器"
+        },
+        {
+            "name": "泡泡",
+            "linke": "www.paopao.dog/",
+            "con": "泡泡飞行器"
         }
     ]
 }

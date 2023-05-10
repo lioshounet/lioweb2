@@ -3,8 +3,12 @@
     <div class="container-fluid">
       <div>
         <div class="row">
-          <h2>设计类资源</h2>
-          <div v-for="itme in mainInfo1">
+          <h2>今天你乳飞了吗</h2>
+          <img src="https://s1.ax1x.com/2023/05/10/p9rVA54.jpg" alt="" class="feiImg">
+          <img src="https://s1.ax1x.com/2023/05/10/p9rELVS.jpg" alt="" class="feiImg">
+          <img src="https://s1.ax1x.com/2023/05/10/p9rEbb8.jpg" alt="" class="feiImg">
+          <img src="https://s1.ax1x.com/2023/05/10/p9rE7KP.jpg" alt="p9rE7KP.jpg" border="0" class="feiImg" />
+          <!-- <div v-for="itme in mainInfo1">
             <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
               <stats-card>
                 <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
@@ -19,7 +23,7 @@
                 </div>
               </stats-card>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -147,12 +151,12 @@ export default {
 
 </script>
 <style lang="scss" scoped>
-.stats-card {
+.feiImg {
 
   // background-color: #fff;
   // .iconClass {
-  //   width: 61px;
-  //   height: 61px;
+  width: 500px;
+  // height: 61px;
   // }
 }
 </style>

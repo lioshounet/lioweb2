@@ -3,8 +3,8 @@
     <div class="container-fluid">
       <div>
         <div class="row">
-          <h2>你这是违法行为，互联网并非法外之地</h2>
-          <!-- <div v-for="itme in mainInfo1">
+          <h2>懂的都懂</h2>
+          <div v-for="itme in mainInfo1">
             <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
               <stats-card>
                 <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
@@ -19,7 +19,38 @@
                 </div>
               </stats-card>
             </div>
-          </div> -->
+          </div>
+        </div>
+        <div class="row">
+          <h2>需要密码联系管理员</h2>
+          <div class="card-content" v-if="!showIF">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <fg-input type="text" label="密码" placeholder="" v-model="user.company">
+                  </fg-input>
+                  <button @click.prevent="cheack" class="btn btn-primary pull-right">
+                    提交</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div v-for="itme in mainInfo2" v-if="showIF">
+            <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
+              <stats-card>
+                <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
+                  class="iconClass">
+                <div slot="title">
+                  <p class="category" style="color: #fff;">{{ itme.con }}</p>
+                  <h3 class="title">{{ itme.name }}
+                  </h3>
+                </div>
+                <div slot="footer">
+                  <i class="material-icons">local_offer</i> tag开发中........
+                </div>
+              </stats-card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -29,16 +60,24 @@
 import StatsCard from 'components/UIComponents/Cards/StatsCard.vue'
 import ChartCard from 'components/UIComponents/Cards/ChartCard.vue'
 import allInfo from 'components/Info/allInfo.json'
+import EditProfileForm from './UserProfile/EditProfileForm.vue'
+import UserCard from './UserProfile/UserCard.vue'
 export default {
   components: {
     StatsCard,
-    ChartCard
+    ChartCard,
+    EditProfileForm,
+    UserCard
   },
   /**
    * Chart data used to render stats, charts. Should be replaced with server data
    */
   data() {
     return {
+      showIF: !true,
+      user: {
+        company: '',
+      },
       dailySalesChart: {
         data: {
           labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
@@ -114,9 +153,19 @@ export default {
     }
   },
   mounted() {
-    this.mainInfo1 = allInfo['认知拓展']
+    this.mainInfo1 = allInfo['WallOver']
+    this.mainInfo2 = allInfo['WallChange']
   },
   methods: {
+    updateProfile() {
+      alert('Your data: ' + JSON.stringify(this.user))
+    },
+    cheack() {
+      if (this.user.company === '123456789') {
+        this.showIF = true
+      }
+
+    },
     jumpLike(linke) {
       let path = window.location.protocol + '//' + linke
       window.open(path)
@@ -154,5 +203,10 @@ export default {
   //   width: 61px;
   //   height: 61px;
   // }
+}
+
+.card-content {
+  width: 50%;
+  margin-left: 5%;
 }
 </style>
