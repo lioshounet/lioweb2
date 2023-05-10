@@ -3,8 +3,28 @@
     <div class="container-fluid">
       <div>
         <div class="row">
-          <h2>打不开注意加速器</h2>
+          <h2>基本全年龄</h2>
           <div v-for="itme in mainInfo1">
+            <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
+              <stats-card>
+                <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
+                  class="iconClass">
+                <div slot="title">
+                  <p class="category" style="color: #fff;">{{ itme.con }}</p>
+                  <h3 class="title">{{ itme.name }}
+                  </h3>
+                </div>
+                <div slot="footer">
+                  <i class="material-icons">local_offer</i> tag开发中........
+                </div>
+              </stats-card>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>R18</h2>
+          <div v-for="itme in mainInfo2">
             <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
               <stats-card>
                 <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
@@ -114,7 +134,8 @@ export default {
     }
   },
   mounted() {
-    this.mainInfo1 = allInfo['游戏']
+    this.mainInfo1 = allInfo['17ACGN']
+    this.mainInfo2 = allInfo['18ACGN']
   },
   methods: {
     jumpLike(linke) {

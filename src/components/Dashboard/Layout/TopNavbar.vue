@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">{{capitalizeFirstLetter($route.name)}}</a>
+        <a class="navbar-brand" href="#">{{ capitalizeFirstLetter($route.name) }}</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -24,11 +24,11 @@
               <span class="notification">5</span>
               <p class="hidden-lg hidden-md">Notifications</p>
             </a>
-            <li><a href="#">Mike John responded to your email</a></li>
-            <li><a href="#">You have 5 new tasks</a></li>
-            <li><a href="#">You're now friend with Andrew</a></li>
-            <li><a href="#">Another Notification</a></li>
-            <li><a href="#">Another One</a></li>
+            <li><a href="#">正在开发</a></li>
+            <li><a href="#">正在开发</a></li>
+            <li><a href="#">正在开发</a></li>
+            <li><a href="#">正在开发</a></li>
+            <li><a href="#">正在开发</a></li>
           </drop-down>
           <li>
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
@@ -44,7 +44,8 @@
             <span class="material-input"></span>
           </div>
           <button type="submit" class="btn btn-white btn-round btn-just-icon">
-            <i class="material-icons">search</i><div class="ripple-container"></div>
+            <i class="material-icons">search</i>
+            <div class="ripple-container"></div>
           </button>
         </form>
       </div>
@@ -52,38 +53,36 @@
   </nav>
 </template>
 <script>
-  export default {
-    computed: {
-      routeName () {
-        const {name} = this.$route
-        return this.capitalizeFirstLetter(name)
-      }
+export default {
+  computed: {
+    routeName() {
+      const { name } = this.$route
+      return this.capitalizeFirstLetter(name)
+    }
+  },
+  data() {
+    return {
+      activeNotifications: false
+    }
+  },
+  methods: {
+    capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1)
     },
-    data () {
-      return {
-        activeNotifications: false
-      }
+    toggleNotificationDropDown() {
+      this.activeNotifications = !this.activeNotifications
     },
-    methods: {
-      capitalizeFirstLetter (string) {
-        return string.charAt(0).toUpperCase() + string.slice(1)
-      },
-      toggleNotificationDropDown () {
-        this.activeNotifications = !this.activeNotifications
-      },
-      closeDropDown () {
-        this.activeNotifications = false
-      },
-      toggleSidebar () {
-        this.$sidebar.displaySidebar(!this.$sidebar.showSidebar)
-      },
-      hideSidebar () {
-        this.$sidebar.displaySidebar(false)
-      }
+    closeDropDown() {
+      this.activeNotifications = false
+    },
+    toggleSidebar() {
+      this.$sidebar.displaySidebar(!this.$sidebar.showSidebar)
+    },
+    hideSidebar() {
+      this.$sidebar.displaySidebar(false)
     }
   }
+}
 
 </script>
-<style>
-
-</style>
+<style></style>

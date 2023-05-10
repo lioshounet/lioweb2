@@ -1,85 +1,158 @@
 <template>
   <div class="content">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <material-table :title="table1.title" :sub-title="table1.subTitle" :data="table1.data" :columns="table1.columns">
-
-          </material-table>
+      <div>
+        <div class="row">
+          <h2>设计类资源</h2>
+          <div v-for="itme in mainInfo1">
+            <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
+              <stats-card>
+                <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
+                  class="iconClass">
+                <div slot="title">
+                  <p class="category" style="color: #fff;">{{ itme.con }}</p>
+                  <h3 class="title">{{ itme.name }}
+                  </h3>
+                </div>
+                <div slot="footer">
+                  <i class="material-icons">local_offer</i> tag开发中........
+                </div>
+              </stats-card>
+            </div>
+          </div>
         </div>
-
-        <div class="col-md-12">
-          <material-table type="plain" :title="table2.title" :sub-title="table2.subTitle" :data="table2.data" :columns="table2.columns">
-
-          </material-table>
-        </div>
-
       </div>
     </div>
   </div>
 </template>
 <script>
-  import MaterialTable from 'components/UIComponents/MaterialTable.vue'
-  const tableColumns = ['Id', 'Name', 'Salary', 'Country', 'City']
-  const tableData = [{
-    id: 1,
-    name: 'Dakota Rice',
-    salary: '$36.738',
-    country: 'Niger',
-    city: 'Oud-Turnhout'
+import StatsCard from 'components/UIComponents/Cards/StatsCard.vue'
+import ChartCard from 'components/UIComponents/Cards/ChartCard.vue'
+import allInfo from 'components/Info/allInfo.json'
+export default {
+  components: {
+    StatsCard,
+    ChartCard
   },
-  {
-    id: 2,
-    name: 'Minerva Hooper',
-    salary: '$23,789',
-    country: 'Curaçao',
-    city: 'Sinaai-Waas'
-  },
-  {
-    id: 3,
-    name: 'Sage Rodriguez',
-    salary: '$56,142',
-    country: 'Netherlands',
-    city: 'Baileux'
-  },
-  {
-    id: 4,
-    name: 'Philip Chaney',
-    salary: '$38,735',
-    country: 'Korea, South',
-    city: 'Overland Park'
-  },
-  {
-    id: 5,
-    name: 'Doris Greene',
-    salary: '$63,542',
-    country: 'Malawi',
-    city: 'Feldkirchen in Kärnten'
-  }]
-
-  export default {
-    components: {
-      MaterialTable
-    },
-    data () {
-      return {
-        table1: {
-          title: 'Stripped Table',
-          subTitle: 'Here is a subtitle for this table',
-          columns: [...tableColumns],
-          data: [...tableData]
+  /**
+   * Chart data used to render stats, charts. Should be replaced with server data
+   */
+  data() {
+    return {
+      dailySalesChart: {
+        data: {
+          labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+          series: [
+            [12, 17, 7, 17, 23, 18, 38]
+          ]
         },
-        table2: {
-          title: 'Table on Plain Background',
-          subTitle: 'Here is a subtitle for this table',
-          columns: [...tableColumns],
-          data: [...tableData]
+        options: {
+          lineSmooth: this.$Chartist.Interpolation.cardinal({
+            tension: 0
+          }),
+          low: 0,
+          high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          chartPadding: { top: 0, right: 0, bottom: 0, left: 0 }
         }
+      },
+      completedTasksChart: {
+        data: {
+          labels: ['12am', '3pm', '6pm', '9pm', '12pm', '3am', '6am', '9am'],
+          series: [
+            [230, 750, 450, 300, 280, 240, 200, 190]
+          ]
+        },
+        options: {
+          lineSmooth: this.$Chartist.Interpolation.cardinal({
+            tension: 0
+          }),
+          low: 0,
+          high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+          chartPadding: { top: 0, right: 0, bottom: 0, left: 0 }
+        }
+      },
+      emailSubscriptionsChart: {
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+          series: [
+            [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+
+          ]
+        },
+        options: {
+          axisX: {
+            showGrid: false
+          },
+          low: 0,
+          high: 1000,
+          chartPadding: { top: 0, right: 5, bottom: 0, left: 0 }
+        },
+        responsiveOptions: [
+          ['screen and (max-width: 640px)', {
+            seriesBarDistance: 5,
+            axisX: {
+              labelInterpolationFnc: (value) => value[0]
+            }
+          }]
+        ]
+      },
+
+      linkData: [
+        {
+          name: "bilibili",
+          linke: "www.bilibili.com",
+          con: "在线美剧"
+        },
+        {
+          name: "bilibili",
+          linke: "bilibili.com",
+          con: "在线美剧"
+        }
+      ],
+      mainInfo1: [],
+      mainInfo2: []
+    }
+  },
+  mounted() {
+    this.mainInfo1 = allInfo['see']
+  },
+  methods: {
+    jumpLike(linke) {
+      let path = window.location.protocol + '//' + linke
+      window.open(path)
+
+    },
+    colorR() {
+      var rObj = {
+        "lio-wh": "#ffffff",
+        "lio-bl": "#355070",
+        "lio-gr": "#6d597a",
+        "lio-r1": "#b56576",
+        "lio-wh": "#e56b6f",
+        "lio-or": "#eaac8b",
       }
+      var rArr = ["#ffffff",
+        "#355070",
+        "#6d597a",
+        "#b56576",
+        "#e56b6f",
+        "#eaac8b",]
+
+      console.log(rArr[Math.floor(Math.random() * rArr.length)]);
+      return rArr[Math.floor(Math.random() * rArr.length)];
     }
   }
 
-</script>
-<style>
+}
 
+</script>
+<style lang="scss" scoped>
+.stats-card {
+
+  // background-color: #fff;
+  // .iconClass {
+  //   width: 61px;
+  //   height: 61px;
+  // }
+}
 </style>

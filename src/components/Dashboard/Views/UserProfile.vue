@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div>
         <div class="row">
-          <h2>打不开注意加速器</h2>
+          <h2>设计类资源</h2>
           <div v-for="itme in mainInfo1">
             <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
               <stats-card>

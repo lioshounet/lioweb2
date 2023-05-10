@@ -184,5 +184,190 @@
             "linke": "www.ymgal.games/",
             "con": "小众的Key一手商店"
         }
+    ],
+    "17ACGN": [
+        {
+            "name": "爱恋BT",
+            "linke": "www.kisssub.org/",
+            "con": "经典动漫种子获取"
+        },
+        {
+            "name": "bangumi",
+            "linke": "bgm.tv/",
+            "con": "经典动漫评分网站"
+        },
+        {
+            "name": "SN搜图",
+            "linke": "saucenao.com",
+            "con": "搜图的"
+        },
+        {
+            "name": "漫猫bt",
+            "linke": "www.comicat.org/",
+            "con": "经典动漫种子获取"
+        },
+        {
+            "name": "AGE",
+            "linke": "age456.com/",
+            "con": "盗版在线动漫"
+        },
+        {
+            "name": "私人影院",
+            "linke": "m.dmwxw.com/",
+            "con": "盗版在线动漫"
+        },
+        {
+            "name": "pixiv",
+            "linke": "www.pixiv.net/",
+            "con": "经典日漫搞图，日ip"
+        }
+    ],
+    "18ACGN": [
+        {
+            "name": "e-hentai",
+            "linke": "e-hentai.org/",
+            "con": "不死的本子网站"
+        },
+        {
+            "name": "琉璃神社",
+            "linke": "www.hacg.mom",
+            "con": "经典里番记录器"
+        }
+    ],
+    "see": [
+        {
+            "name": "第一ppt",
+            "linke": "www.1ppt.com/",
+            "con": "广告多的ppt网站"
+        },
+        {
+            "name": "阿里图标库",
+            "linke": "www.iconfont.cn/",
+            "con": "阿里内部对外开发的图标库"
+        },
+        {
+            "name": "newcger",
+            "linke": "www.newcger.com/",
+            "con": "AE模板"
+        },
+        {
+            "name": "css渐变",
+            "linke": "ourownthing.co.uk/gradpad.html",
+            "con": "css渐变生成器"
+        },
+        {
+            "name": "包图网",
+            "linke": "ibaotu.com/",
+            "con": "Adobe的各种模板"
+        },
+        {
+            "name": "unDraw",
+            "linke": "undraw.co/illustrations",
+            "con": "艺术风图标"
+        },
+        {
+            "name": "lookae",
+            "linke": "www.lookae.com/",
+            "con": "各种视频模板"
+        },
+        {
+            "name": "wallhaven",
+            "linke": "wallhaven.cc/",
+            "con": "壁纸"
+        },
+        {
+            "name": "pixabay",
+            "linke": "pixabay.com/zh/",
+            "con": "搞图的"
+        }
+    ],
+    "toolBox": [
+        {
+            "name": "pdf工具箱",
+            "linke": "smallpdf.com",
+            "con": "pdf工具箱"
+        },
+        {
+            "name": "系统来源",
+            "linke": "next.itellyou.cn/Original/",
+            "con": "系统ISO来源"
+        },
+        {
+            "name": "皮卡抠图",
+            "linke": "www.picup.shop/currencyBatch.html",
+            "con": "皮卡抠图"
+        },
+        {
+            "name": "rbg抠图",
+            "linke": "www.remove.bg/zh",
+            "con": "rbg抠图"
+        },
+        {
+            "name": "WPS工具箱",
+            "linke": "xpdf.cn/",
+            "con": "WPS工具箱"
+        },
+        {
+            "name": "格式转换",
+            "linke": "www.alltoall.net/",
+            "con": "文档格式转化"
+        },
+        {
+            "name": "抠视频",
+            "linke": "www.unscreen.com/",
+            "con": "抠视频"
+        },
+        {
+            "name": "全工具",
+            "linke": "www.67tool.com/",
+            "con": "全工具"
+        }
+    ],
+    "认知拓展": [
+        {
+            "name": "日式咖啡曲",
+            "linke": "bgmc-station.com/albums",
+            "con": "日式咖啡曲"
+        },
+        {
+            "name": "Ai拯救剧荒",
+            "linke": "datenightmovies.com/",
+            "con": "Ai推荐电影"
+        },
+        {
+            "name": "核弹爆炸模拟",
+            "linke": "nuclearsecrecy.com/nukemap/",
+            "con": "核弹爆炸模拟"
+        },
+        {
+            "name": "制服地图",
+            "linke": "uniform.wingzero.tw/",
+            "con": "全世界的少女穿什么制服"
+        },
+        {
+            "name": "lks",
+            "linke": "xiangjianan.github.io/lks/",
+            "con": "CNweb最后的荣光"
+        },
+        {
+            "name": "vtb",
+            "linke": "vtbs.moe/",
+            "con": "vtb大数据"
+        },
+        {
+            "name": "蒸汽波",
+            "linke": "lab.magiconch.com/vaporwave/?from=home",
+            "con": "蒸汽波"
+        },
+        {
+            "name": "在线ps",
+            "linke": "ps.gaoding.com/#/",
+            "con": "在线ps（一般般吧）"
+        },
+        {
+            "name": "世界之窗",
+            "linke": "www.window-swap.com/",
+            "con": "世界的一边的随机窗户"
+        }
     ]
 }

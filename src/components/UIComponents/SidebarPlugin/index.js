@@ -14,6 +14,11 @@ const SidebarStore = {
       path: '/admin/stats'
     },
     {
+      name: '视觉资源',
+      icon: 'location_on',
+      path: '/admin/see'
+    },
+    {
       name: 'ACGN',
       icon: 'location_on',
       path: '/admin/maps'

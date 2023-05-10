@@ -10,6 +10,7 @@ import Icons from 'src/components/Dashboard/Views/Icons.vue'
 import Maps from 'src/components/Dashboard/Views/Maps.vue'
 import Typography from 'src/components/Dashboard/Views/Typography.vue'
 import TableList from 'src/components/Dashboard/Views/TableList.vue'
+import See from 'src/components/Dashboard/Views/See.vue'
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
         path: 'stats',
         name: '游戏',
         component: UserProfile
+      },
+      {
+        path: 'see',
+        name: '视觉资源',
+        component: See
       },
       {
         path: 'notifications',
