@@ -3,10 +3,30 @@
     <div class="container-fluid">
       <div>
         <div class="row">
-          <div v-for="itme in mainInfo">
+          <h2>在线区</h2>
+          <div v-for="itme in mainInfo1">
             <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
               <stats-card>
-                <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/56`" alt=""
+                <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
+                  class="iconClass">
+                <div slot="title">
+                  <p class="category" style="color: #fff;">{{ itme.con }}</p>
+                  <h3 class="title">{{ itme.name }}
+                  </h3>
+                </div>
+                <div slot="footer">
+                  <i class="material-icons">local_offer</i> tag开发中........
+                </div>
+              </stats-card>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2>下载区</h2>
+          <div v-for="itme in mainInfo2">
+            <div class="col-lg-3 col-md-6 col-sm-6" @click="jumpLike(itme.linke)">
+              <stats-card>
+                <img slot="icon" :src="`https://moral-scarlet-fox.faviconkit.com/${itme.linke}/200`" alt=""
                   class="iconClass">
                 <div slot="title">
                   <p class="category" style="color: #fff;">{{ itme.con }}</p>
@@ -101,20 +121,21 @@ export default {
         {
           name: "bilibili",
           linke: "www.bilibili.com",
-          con: "bbbbbbbbbbbbbbbb"
+          con: "在线美剧"
         },
         {
           name: "bilibili",
           linke: "bilibili.com",
-          con: "bbbbbbbbbbbbbbbb"
+          con: "在线美剧"
         }
       ],
-      mainInfo: []
-
+      mainInfo1: [],
+      mainInfo2: []
     }
   },
   mounted() {
-    this.mainInfo = allInfo['影视']
+    this.mainInfo1 = allInfo['影视在线']
+    this.mainInfo2 = allInfo['下载影视']
   },
   methods: {
     jumpLike(linke) {

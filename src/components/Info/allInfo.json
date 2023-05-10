@@ -1,61 +1,188 @@
 {
-    "影视": [
+    "影视在线": [
         {
             "name": "libvio",
             "linke": "www.libvio.me/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "豌豆",
             "linke": "www.wandou.pro/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "哔嘀",
             "linke": "www.bdys01.com/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "美剧天堂",
             "linke": "www.meijutt.tv/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "novipnoad",
             "linke": "www.novipnoad.com/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "低端影视",
             "linke": "www.ddys.art/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "ajeee",
             "linke": "www.ajeee.com/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "6080dy2",
             "linke": "www.6080dy2.com/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
         },
         {
             "name": "胖虎",
             "linke": "www.panghuys.com/",
-            "con": "bbbbbbbbbbbbbbbb"
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "jinmantv",
+            "linke": "jinmantv.com",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "pupvod",
+            "linke": "pupvod.com/",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "coffeefox",
+            "linke": "coffeefox.top/",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "xigua133",
+            "linke": "www.xigua133.com/",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "ikyy",
+            "linke": "www.ikyy.cc/",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "ylwt33",
+            "linke": "www.ylwt33.com/",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "二萌",
+            "linke": "ys.ccmoe.cc/",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "趣炮",
+            "linke": "www.7pw.net/",
+            "con": "在线美剧/日剧"
+        },
+        {
+            "name": "蜥蜴影院",
+            "linke": "xi1.net/",
+            "con": "在线美剧/日剧"
+        }
+    ],
+    "下载影视": [
+        {
+            "name": "迅雷电影天堂",
+            "linke": "www.xl720.com/",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "4K电影",
+            "linke": "4k-m.com/",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "mp4电影",
+            "linke": "www.domp4.cc/",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "sozmz",
+            "linke": "v.dsb.ink/#/",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "电影天堂",
+            "linke": "www.dy2018.com/index.html",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "新6v电影",
+            "linke": "www.66s.cc/",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "bt之家",
+            "linke": "www.ajeee.com/",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "bt部落",
+            "linke": "www.btbuluo.net/",
+            "con": "种子下载-磁力美剧/日剧"
+        },
+        {
+            "name": "海盗湾",
+            "linke": "piratebay.live/",
+            "con": "种子下载-磁力美剧/日剧"
         }
     ],
     "游戏": [
         {
-            "name": "biffffffili",
-            "linke": "www.bilibili.com",
-            "con": "bbbbbbbbbbbbbbbb"
+            "name": "毛子盗版",
+            "linke": "rutor-org.games/",
+            "con": "俄语为主的盗版网站，更新快"
         },
         {
-            "name": "bilibili",
-            "linke": "bilibili.com",
-            "con": "bbbbbbbbbbbbbbbb"
+            "name": "2game",
+            "linke": "2game.hk/cn/",
+            "con": "小众的Key一手商店"
+        },
+        {
+            "name": "Fanatical",
+            "linke": "www.fanatical.com/zh-hans/",
+            "con": "一般的Key一手商店"
+        },
+        {
+            "name": "humblebundle",
+            "linke": "www.humblebundle.com/",
+            "con": "打包卖key的一手商店"
+        },
+        {
+            "name": "steampy",
+            "linke": "steampy.com/pyMarket/pyMarket",
+            "con": "P2P key买卖平台"
+        },
+        {
+            "name": "steamdb",
+            "linke": "steamdb.info/",
+            "con": "职业steam数据爬虫"
+        },
+        {
+            "name": "chinaplay",
+            "linke": "chinaplay.store/china-keys/",
+            "con": "专注俄罗斯和中国的key商"
+        },
+        {
+            "name": "全游戏520",
+            "linke": "xxxxx520.com/",
+            "con": "全游戏盗版"
+        },
+        {
+            "name": "ymgal",
+            "linke": "www.ymgal.games/",
+            "con": "小众的Key一手商店"
         }
     ]
 }

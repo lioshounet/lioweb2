@@ -1,6 +1,6 @@
 <template>
   <div class="card card-stats">
-    <div class="card-header ">
+    <div class="card-header">
       <slot name="icon" class="iconClass"></slot>
     </div>
     <div class="card-content" :style="thisstyle">
@@ -72,6 +72,7 @@ export default {
 <style lang="scss" scoped>
 .card-header {
   border-radius: 15% !important;
+  background-color: #fff !important;
 
   .iconClass {
     width: 61px;

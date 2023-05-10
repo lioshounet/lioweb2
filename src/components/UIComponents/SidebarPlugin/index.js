@@ -14,30 +14,30 @@ const SidebarStore = {
       path: '/admin/stats'
     },
     {
+      name: 'ACGN',
+      icon: 'location_on',
+      path: '/admin/maps'
+    },
+    {
       name: '工具箱',
-      icon: 'content_paste',
-      path: '/admin/table-list'
+      icon: 'notifications',
+      path: '/admin/notifications'
     },
     {
       name: '认知拓展',
-      icon: 'library_books',
-      path: '/admin/typography'
-    },
-    {
-      name: 'ACGN',
       icon: 'bubble_chart',
       path: '/admin/icons'
     },
     {
       name: '玛利亚之墙',
-      icon: 'location_on',
-      path: '/admin/maps'
+      icon: 'library_books',
+      path: '/admin/typography'
     },
     {
       name: '乳飞专区',
-      icon: 'notifications',
-      path: '/admin/notifications'
-    }
+      icon: 'content_paste',
+      path: '/admin/table-list'
+    },
   ],
   displaySidebar(value) {
     this.showSidebar = value
