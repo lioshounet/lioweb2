@@ -181,12 +181,17 @@
         },
         {
             "name": "全游戏520",
-            "linke": "xxxxx520.com/",
+            "linke": "laoquzhang.com/",
             "con": "全游戏盗版"
         },
         {
             "name": "ymgal",
             "linke": "www.ymgal.games/",
+            "con": "小众的Key一手商店"
+        },
+        {
+            "name": "小绿人",
+            "linke": "www.greenmangaming.com/zh/",
             "con": "小众的Key一手商店"
         }
     ],
@@ -341,6 +346,31 @@
             "name": "全工具",
             "linke": "www.67tool.com/",
             "con": "全工具"
+        },
+        {
+            "name": "翻译",
+            "linke": "www.deepl.com/translator",
+            "con": "翻译"
+        },
+        {
+            "name": "最最官方的ChatGPT",
+            "linke": "chat.openai.com/chat",
+            "con": "ChatGPT"
+        },
+        {
+            "name": "画各种图",
+            "linke": "www.processon.com/",
+            "con": "画各种图"
+        },
+        {
+            "name": "免费字体",
+            "linke": "veleap.com/console/works/material/font",
+            "con": "免费字体"
+        },
+        {
+            "name": "来点句子",
+            "linke": "wantquotes.net/",
+            "con": "来点句子"
         }
     ],
     "认知拓展": [

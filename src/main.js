@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
 
 // Plugins
 import GlobalComponents from './globalComponents'
@@ -27,7 +25,6 @@ Vue.use(GlobalDirectives)
 Vue.use(GlobalMixins)
 Vue.use(Notifications)
 Vue.use(SideBar)
-// Vue.use(ElementUI)
 
 // configure router
 const router = new VueRouter({
