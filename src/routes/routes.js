@@ -16,7 +16,7 @@ const routes = [
   {
     path: '/',
     component: DashboardLayout,
-    redirect: '/admin/dashboard'
+    redirect: '/admin/show'
   },
   {
     path: '/admin',
@@ -24,12 +24,12 @@ const routes = [
     redirect: '/admin/dashboard',
     children: [
       {
-        path: 'dashboard',
+        path: 'show',
         name: '影视',
         component: Dashboard
       },
       {
-        path: 'stats',
+        path: 'game',
         name: '游戏',
         component: UserProfile
       },
@@ -39,27 +39,27 @@ const routes = [
         component: See
       },
       {
-        path: 'notifications',
+        path: 'toolBox',
         name: '工具箱',
         component: Notifications
       },
       {
-        path: 'icons',
+        path: 'kown',
         name: '认知拓展',
         component: Icons
       },
       {
-        path: 'maps',
+        path: 'ACGN',
         name: 'ACGN',
         component: Maps
       },
       {
-        path: 'typography',
+        path: 'wall',
         name: '玛利亚之墙',
         component: Typography
       },
       {
-        path: 'table-list',
+        path: 'badfly',
         name: '乳飞专区',
         component: TableList
       }

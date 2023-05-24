@@ -75,6 +75,7 @@ export default {
   background-color: #fff !important;
 
   .iconClass {
+    content-visibility: auto;
     width: 61px;
     height: 61px;
     border-radius: 15%;

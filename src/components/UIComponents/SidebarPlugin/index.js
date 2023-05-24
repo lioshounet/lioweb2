@@ -5,43 +5,43 @@ const SidebarStore = {
   sidebarLinks: [
     {
       name: '影视',
-      icon: 'dashboard',
-      path: '/admin/dashboard'
+      icon: 'live_tv',
+      path: '/admin/show'
     },
     {
       name: '游戏',
-      icon: 'person',
-      path: '/admin/stats'
+      icon: 'sports_esports',
+      path: '/admin/game'
     },
     {
       name: '视觉资源',
-      icon: 'location_on',
+      icon: 'visibility',
       path: '/admin/see'
     },
     {
       name: 'ACGN',
-      icon: 'location_on',
-      path: '/admin/maps'
+      icon: 'face_4',
+      path: '/admin/ACGN'
     },
     {
       name: '工具箱',
-      icon: 'notifications',
-      path: '/admin/notifications'
+      icon: 'home_repair_service',
+      path: '/admin/toolBox'
     },
     {
       name: '认知拓展',
-      icon: 'bubble_chart',
-      path: '/admin/icons'
+      icon: 'collections_bookmark',
+      path: '/admin/kown'
     },
     {
       name: '玛利亚之墙',
-      icon: 'library_books',
-      path: '/admin/typography'
+      icon: 'texture',
+      path: '/admin/wall'
     },
     {
       name: '乳飞专区',
-      icon: 'content_paste',
-      path: '/admin/table-list'
+      icon: 'airplane_ticket',
+      path: '/admin/badfly'
     },
   ],
   displaySidebar(value) {
