@@ -11,6 +11,7 @@ import Maps from 'src/components/Dashboard/Views/Maps.vue'
 import Typography from 'src/components/Dashboard/Views/Typography.vue'
 import TableList from 'src/components/Dashboard/Views/TableList.vue'
 import See from 'src/components/Dashboard/Views/See.vue'
+import ai from 'src/components/Dashboard/Views/Ai.vue'
 
 const routes = [
   {
@@ -52,6 +53,11 @@ const routes = [
         path: 'ACGN',
         name: 'ACGN',
         component: Maps
+      },
+      {
+        path: 'ai',
+        name: '人工智能',
+        component: ai
       },
       {
         path: 'wall',

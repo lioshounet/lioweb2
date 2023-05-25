@@ -495,7 +495,7 @@
         },
         {
             "name": "圆梦域名发布",
-            "linke": "https://github.com/67kcp/67kcp/blob/master/README.md",
+            "linke": "github.com/67kcp/67kcp/blob/master/README.md",
             "con": "圆梦域名发布"
         },
         {
@@ -507,6 +507,73 @@
             "name": "泡泡",
             "linke": "www.paopao.dog/",
             "con": "泡泡飞行器"
+        }
+    ],
+    "AI": [
+        {
+            "name": "综合导航",
+            "linke": "novelai.dev/",
+            "con": "综合导航"
+        },
+        {
+            "name": "tag超市 less",
+            "linke": "tags.novelai.dev/",
+            "con": "tag超市 less"
+        },
+        {
+            "name": "SD法术解析",
+            "linke": "spell.novelai.dev/",
+            "con": "Stable Diffusion 法术解析"
+        },
+        {
+            "name": "NovelAI的画图插件 ",
+            "linke": "bot.novelai.dev/",
+            "con": "基于NovelAI的画图插件 "
+        },
+        {
+            "name": "Nonebot-plugin-novelai",
+            "linke": "nb.novelai.dev/",
+            "con": "一个Nonebot的AI绘画插件说明书"
+        },
+        {
+            "name": "AiDraw",
+            "linke": "guide.novelai.dev/",
+            "con": "AiDraw"
+        },
+        {
+            "name": "aibooru",
+            "linke": "aibooru.online/  ",
+            "con": "aibooru"
+        },
+        {
+            "name": "huggingface",
+            "linke": "huggingface.co/",
+            "con": "全球最大开放模型下载地"
+        },
+        {
+            "name": "aigodlike社区",
+            "linke": "www.aigodlike.com/",
+            "con": "aigodlike社区"
+        },
+        {
+            "name": "findingart社区",
+            "linke": "finding.art/#/",
+            "con": "findingart社区"
+        },
+        {
+            "name": "pixaiart社区",
+            "linke": "pixai.art/",
+            "con": "pixaiart社区"
+        },
+        {
+            "name": "civitai",
+            "linke": "civitai.com/",
+            "con": "全球最大SD绘画交流社区"
+        },
+        {
+            "name": "飞桨社区",
+            "linke": "aistudio.baidu.com/aistudio/datasetoverview/2",
+            "con": "飞桨社区"
         }
     ]
 }

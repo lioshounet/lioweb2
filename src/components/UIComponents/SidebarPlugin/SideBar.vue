@@ -3,7 +3,7 @@
     style="background-image: url(static/img/sidebar-1.jpg)" :data-active-color="activeColor">
 
     <div class="logo">
-      <a href="http://www.creative-tim.com" class="simple-text">
+      <a href="http://www.lioshounet.cc:777/#/admin/show" class="simple-text">
         小里欧工具箱/莽砸导航
       </a>
     </div>

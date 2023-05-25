@@ -2,6 +2,7 @@ import Sidebar from './SideBar.vue'
 
 const SidebarStore = {
   showSidebar: false,
+  // icon是Material icons
   sidebarLinks: [
     {
       name: '影视',
@@ -32,6 +33,11 @@ const SidebarStore = {
       name: '认知拓展',
       icon: 'collections_bookmark',
       path: '/admin/kown'
+    },
+    {
+      name: '人工智能',
+      icon: 'charging_station',
+      path: '/admin/ai'
     },
     {
       name: '玛利亚之墙',

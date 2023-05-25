@@ -10,7 +10,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <router-link :to="{path:'/admin'}" class="navbar-brand">Dashboard</router-link>
+          <router-link :to="{ path: '/' }" class="navbar-brand">Dashboard</router-link>
         </div>
 
       </div>
@@ -22,7 +22,9 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
               <h2 class="title text-danger">404 Not Found</h2>
-              <h2 class="title">Oops! It seems that this page does not exist.</h2>
+              <h2 class="title">页面走丢了，也可能是您收藏了错误的网址，尝试重新收藏</h2>
+
+              <router-link :to="{ path: '/' }"> <button type="button" class="btn btn-warning">返回主页</button></router-link>
             </div>
           </div>
         </div>
@@ -33,10 +35,10 @@
         <nav class="pull-left">
           <ul>
             <li>
-              <router-link :to="{path:'/'}">Home</router-link>
+              <router-link :to="{ path: '/' }">Home</router-link>
             </li>
             <li>
-              <router-link :to="{path:'/register'}">Register</router-link>
+              <router-link :to="{ path: '/register' }">Register</router-link>
             </li>
           </ul>
         </nav>
@@ -50,6 +52,6 @@
 </template>
 
 <script>
-  export default {}
+export default {}
 
 </script>
